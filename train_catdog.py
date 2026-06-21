@@ -1,5 +1,6 @@
 import argparse
 import json
+import warnings
 from pathlib import Path
 
 import numpy as np
@@ -7,6 +8,9 @@ import torch
 from torch import nn
 from torch.utils.data import DataLoader, Dataset
 from torchvision import datasets, transforms
+
+# Suppress torchvision CIFAR-10 NumPy 2.x compatibility warning
+warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning)
 
 
 # CIFAR-10 原始标签: 3=cat, 5=dog
