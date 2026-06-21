@@ -238,16 +238,17 @@ python zk_protocol.py
 
 | 组件 | 版本 | 用途 |
 |------|------|------|
-| Python | 3.9+ | 运行环境 |
-| PyTorch | 2.5+ (CUDA 12.1) | 模型训练 |
+| Python | ≥3.9 | 运行环境 |
+| PyTorch | ≥2.5 (CUDA 12.1) | 模型训练 |
 | TenSEAL | 0.3.16 | CKKS 同态加密 |
-| Flask | — | 服务端框架 |
-| Pillow | — | 图像处理 |
-| NumPy | — | 数值计算 |
+| Flask | 3.1 | 服务端框架 |
+| Pillow | 10.4 | 图像处理 |
+| NumPy | 2.4 | 数值计算 / 权重存储 |
+| Requests | 2.32 | HTTP 客户端 |
 
 ```powershell
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
-pip install tenseal flask pillow numpy requests
+pip install tenseal==0.3.16 flask==3.1 pillow==10.4 numpy==2.4 requests==2.32
 ```
 
 ---
