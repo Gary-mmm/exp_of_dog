@@ -1,1 +1,11 @@
 datasets/
+data/
+__pycache__/
+*.pt
+artifacts/he_cnn_weights.npz
+artifacts/he_cnn_weights_gpu.npz
+artifacts/catdog_square_cnn_weights_biases.npz
+artifacts/check_fused.npz
+server_err.txt
+server_out.txt
+*.pyc

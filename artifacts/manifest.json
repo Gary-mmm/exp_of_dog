@@ -1,0 +1,27 @@
+{
+  "classes": {
+    "0": "cat",
+    "1": "dog"
+  },
+  "input": "CIFAR-10 RGB image, shape [3, 32, 32], pixel range [0, 1]",
+  "architecture": [
+    "conv1: Conv2d(3, 32, kernel_size=5, padding=2), square, AvgPool2d(2)",
+    "conv2: Conv2d(32, 64, kernel_size=5, padding=2), square, AvgPool2d(2)",
+    "fc1: Linear(64*8*8, 256), square",
+    "fc2: Linear(256, 2)"
+  ],
+  "parameter_files": {
+    "pytorch": "catdog_square_cnn_state_dict.pt",
+    "numpy": "catdog_square_cnn_weights_biases.npz"
+  },
+  "parameter_names": [
+    "features.0.weight",
+    "features.0.bias",
+    "features.3.weight",
+    "features.3.bias",
+    "classifier.1.weight",
+    "classifier.1.bias",
+    "classifier.3.weight",
+    "classifier.3.bias"
+  ]
+}
